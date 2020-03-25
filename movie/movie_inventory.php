@@ -14,7 +14,7 @@
 				<a>
 					<br>
 					<center>
-					<img height='100' width='200' src='images/library_logo.jpg'></img>
+					<img height='100' width='200' src='../images/library_logo.jpg'></img>
 					<br>
 					</center>
 				</a>

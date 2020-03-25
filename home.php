@@ -14,7 +14,7 @@ echo <<<_END
 			<a>
 				<br>
 				<center>
-				<img height='100' width='200' src='images/library_logo.jpg'></img>
+				<img height='100' width='200' src='./images/library_logo.jpg'></img>
 				</center>
 				<br>
 				<br>
@@ -25,21 +25,21 @@ echo <<<_END
 				<div class="col-lg-6 col-md-6  col-sm-12">
 					<center>
 					<a href="book_inventory.php">
-						<img height='150' width='150' src='images/book_inventory.jpg'></img>
+						<img height='150' width='150' src='./images/book_inventory.jpg'></img>
 					</a>
 						<br> 
 						Book List 
 					<br>
 					<br>
 					<a href="movie_inventory.php">
-						<img height='150' width='150' src='images/movie_inventory.jpg'></img>
+						<img height='150' width='150' src='./images/movie_inventory.jpg'></img>
 					</a>
 						<br>
 						Movie List
 					<br>
 					<br>
 					<a href="magazine_inventory.php">
-						<img height='150' width='150' src='images/magazine_inventory.png'></img>
+						<img height='150' width='150' src='./images/magazine_inventory.png'></img>
 					</a>
 						<br>
 						Magazine List
@@ -48,21 +48,21 @@ echo <<<_END
 				<div class="col-lg-6 col-md-6  col-sm-12">
 					<center>
 					<a href="music_inventory.php">
-						<img height='150' width='150' src='images/music_inventory.jpg'></img>
+						<img height='150' width='150' src='./images/music_inventory.jpg'></img>
 					</a>
 						<br>
 						Music List
 					<br>
 					<br>
 					<a href="internet_access.php">
-						<img height='150' width='150' src='images/internet_access.png'></img>
+						<img height='150' width='150' src='./images/internet_access.png'></img>
 					</a>
 						<br>
 						Internet Access
 					<br>
 					<br>
 					<a href="class_search.php">
-						<img height='150' width='150' src='images/community_class_search.jpg'></img>
+						<img height='150' width='150' src='./images/community_class_search.jpg'></img>
 					</a>
 						<br>
 						Community Classes

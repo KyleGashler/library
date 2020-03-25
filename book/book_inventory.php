@@ -14,7 +14,7 @@
 				<a>
 					<br>
 					<center>
-					<img height='100' width='200' src='images/library_logo.jpg'></img>
+					<img height='100' width='200' src='../images/library_logo.jpg'></img>
 					<br>
 					</center>
 				</a>
@@ -24,7 +24,7 @@
 			<div class="col-lg-6 col-md-6  col-sm-12">
 				<center>
 				<a href="book_details.php">
-					<img height='150' width='150' src='images/hp_book.jpg'></img>
+					<img height='150' width='150' src='../images/hp_book.jpg'></img>
 				</a>
 			</div>
 		

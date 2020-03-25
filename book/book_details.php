@@ -18,10 +18,10 @@
 				<a>
 					<br>
 					<center>
-					<img height='100' width='200' src='images/library_logo.jpg'></img>
+					<img height='100' width='200' src='../images/library_logo.jpg'></img>
 					<br>
 					<br>
-					<img height='250' width='250' src='images/hp_book.jpg'></img>
+					<img height='250' width='250' src='../images/hp_book.jpg'></img>
 					<br>
 					Harry Potter and The Sorcerer's Stone 
 					<br>

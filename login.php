@@ -9,12 +9,12 @@ echo <<<_END
 			<a>
 				<br>
 				<center>
-				<img height='100' width='200' src='images/library_logo.jpg'></img>
+				<img height='100' width='200' src='./images/library_logo.jpg'></img>
 				</center>
 				<br>
 				<br>
 			</a>
-			<form method="post" action ="library_home.php">
+			<form method="post" action ="./library_home.php">
 				<center>
 				Username
 				<input type ="text" name="name">

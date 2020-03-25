@@ -3,7 +3,7 @@
 		<html>
 			<head>
 				<title>Movie Inventory</title>
-				<link rel='stylesheet' href='styles.css'>
+				<link rel='stylesheet' href='../styles.css'>
 			</head>
 			<body>
 			

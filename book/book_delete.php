@@ -3,7 +3,7 @@
 		<html>
 			<head>
 				<title>Book Delete</title>
-				<link rel='stylesheet' href='styles.css'>
+				<link rel='stylesheet' href='../styles.css'>
 			</head>
 			<body>
 				<a>

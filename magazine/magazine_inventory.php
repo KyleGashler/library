@@ -3,7 +3,7 @@
 		<html>
 			<head>
 				<title>Magazine Inventory</title>
-				<link rel='stylesheet' href='styles.css'>
+				<link rel='stylesheet' href='../styles.css'>
 			</head>
 			<body>
 			
@@ -14,7 +14,7 @@
 				<a>
 					<br>
 					<center>
-					<img height='100' width='200' src='images/library_logo.jpg'></img>
+					<img height='100' width='200' src='../images/library_logo.jpg'></img>
 					<br>
 					</center>
 				</a>

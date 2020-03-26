@@ -27,6 +27,10 @@ echo <<<_END
 				<input type="submit" value="Login">
 				</center>
 			</form>
+			<br>
+			<a href="./register.php">
+				New user? Register here!
+			</a>
 		</body>
 	</html>
 _END;

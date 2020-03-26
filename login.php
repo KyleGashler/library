@@ -14,7 +14,7 @@ echo <<<_END
 				<br>
 				<br>
 			</a>
-			<form method="post" action ="./library_home.php">
+			<form method="post" action ="./users/validate-user.php">
 				<center>
 				Username
 				<input type ="text" name="name">

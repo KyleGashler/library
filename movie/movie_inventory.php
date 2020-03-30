@@ -8,7 +8,7 @@
 			<body>
 			
 				<form method="post" action ="movie_inventory_add.php">
-					<input type="submit" value="add movie">
+					<input type="submit" value="Add Movie">
 				</form>	
 		
 				<a>
@@ -18,6 +18,14 @@
 					<br>
 					</center>
 				</a>
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<div class="container">
+			<div class="col-lg-6 col-md-6  col-sm-12">
+				<center>
+				<a href="movie_details.php">
+					<img height='225' width='150' src='../images/jurassic_park.jpg'></img>
+				</a>
+			</div>
 		
 			</body>
 		</html>

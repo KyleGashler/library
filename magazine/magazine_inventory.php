@@ -18,6 +18,15 @@
 					<br>
 					</center>
 				</a>
+				
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<div class="container">
+			<div class="col-lg-6 col-md-6  col-sm-12">
+				<center>
+				<a href="magazine_details.php">
+					<img height='150' width='150' src='../images/si_mag.jpg'></img>
+				</a>
+			</div>
 		
 			</body>
 		</html>

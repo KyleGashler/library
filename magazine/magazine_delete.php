@@ -1,20 +1,21 @@
 <?php
-	echo <<<_END
-		<html>
-			<head>
-				<title>Magazine Delete</title>
-				<link rel='stylesheet' href='../styles.css'>
-			</head>
-			<body>
-				<a>
-					<br>
-					<center>
-					<img height='100' width='200' src='../images/library_logo.jpg'></img>
-					</center>
-					<br>
-					<br>
-				</a>
-			</body>
-		</html>
-	_END;
+require_once '../library_db_login.php';
+
+$conn = new mysqli($hn, $un, $pw, $db);
+if($conn->connect_error) die($conn->connect_error);
+
+
+if(isset($_POST['delete'])){
+	
+	$magazineid = $_POST['magazineid'];
+	$query = "DELETE from magazines where magazineid='$magazineid' ";
+	
+	$result = $conn ->query($query);
+	if(!$result) die($conn->error);
+	
+	header("Location: magazine_inventory.php");
+
+}
+
+$conn->close();
 ?>

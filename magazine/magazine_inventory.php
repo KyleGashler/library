@@ -1,9 +1,7 @@
-<?php
-	echo <<<_END
-		<html>
+<html>
 			<head>
 				<title>Magazine Inventory</title>
-				<link rel='stylesheet' href='../styles.css'>
+				<link rel='stylesheet' href='../../../Downloads/updated_library/styles.css'>
 			</head>
 			<body>
 			
@@ -14,21 +12,46 @@
 				<a>
 					<br>
 					<center>
-					<img height='100' width='200' src='../images/library_logo.jpg'></img>
+					<img height='100' width='200' src='../../../Downloads/updated_library/images/library_logo.jpg'></img>
 					<br>
 					</center>
 				</a>
-				
-				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-			<div class="container">
-			<div class="col-lg-6 col-md-6  col-sm-12">
-				<center>
-				<a href="magazine_details.php">
-					<img height='150' width='150' src='../images/si_mag.jpg'></img>
-				</a>
-			</div>
-		
 			</body>
-		</html>
-	_END;
+</html>
+
+<?php
+	require_once '../library_db_login.php';
+
+				$conn = new mysqli($hn, $un, $pw, $db);
+				if($conn->connect_error) die($conn->connect_error);
+
+				$query = "SELECT * FROM magazines";
+	
+				$result = $conn->query($query);
+				if(!$result) die($conn->error);
+	
+				$rows = $result->num_rows;
+
+				for($j=0; $j<$rows; ++$j){
+					$result->data_seek($j);
+					$row = $result->fetch_array(MYSQLI_NUM);
+echo <<<_END
+	
+			
+				
+				<pre>
+	
+				<form method="post" action ="magazine_details.php">
+					<input type ='hidden' name ='magazineid' value='$row[0]'>
+					Title: <input type='submit' value='$row[1]'>
+					<img height='150' width='150' src='$row[6]'></img>
+				</form>
+						
+				</pre>
+				
+			
+		
+			
+_END;
+				}
 ?>

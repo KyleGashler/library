@@ -1,40 +1,58 @@
-<?php
-	echo <<<_END
-		<html>
+<html>
 			<head>
-				<title>Music Inventory Add</title>
-				<link rel='stylesheet' href='../styles.css'>
+				<title>Music Add</title>
+				<link rel='stylesheet' href='../../../Downloads/updated_library/styles.css'>
 			</head>
-			<body>
 				<a>
 					<br>
 					<center>
-					<img height='100' width='200' src='../images/library_logo.jpg'></img>
+					<img height='100' width='200' src='../../../Downloads/updated_library/images/library_logo.jpg'></img>
+					<br>
 					</center>
-					<br>
-					<br>
 				</a>
-				<form method="post" action ="music_inventory.php">
-					<center>
-					Music ID:
-					<input type='text' name='id'>
-					<br>
-					Artist Name:
-					<input type='text' name='artist_name'>
-					<br>
-					Album Name:
-					<input type='text' name='album_name'>
-					<br>
-					Genre:
-					<input type='text' name='genre'>
-					<br>
-					Release Year:
-					<input type='text' name='year'>
-					<br>
-					<input type='submit' value='Add'>
-					</center>
-				</form>
-			</body>
-		</html>
-	_END;
+			<body>
+				<form method='post' action='music_inventory_add.php'>
+			
+				<center>
+					Artist: <input type='text' name='artistName'><br>
+					Album: <input type='text' name='albumName'><br>
+					Genre: <input type='text' name='genre'><br>
+					Year Released: <input type='text' name='releaseYear'><br>
+					Image Link: <input type='text' name='imageLink'><br>
+					<input type='submit' value='Add Music'>
+				</center>
+			
+		</form>
+	</body>
+</html>
+
+<?php
+	require_once '../library_db_login.php';
+
+$conn = new mysqli($hn, $un, $pw, $db);
+if($conn->connect_error) die($conn->connect_error);
+
+
+if(isset($_POST['artistName'])) 
+{
+
+	$artistName = $_POST['artistName'];
+	$albumName = $_POST['albumName'];
+	$genre = $_POST['genre'];
+	$releaseYear = $_POST['releaseYear'];
+	$imageLink = $_POST['imageLink'];
+	
+	$query = "INSERT INTO music (artistName, albumName, genre, releaseYear, imageLink) VALUES ('$artistName','$albumName', '$genre', '$releaseYear', '$imageLink')";
+	
+	
+	
+	$result = $conn->query($query); 
+	if(!$result) die($conn->error);
+	
+	header("Location: music_inventory.php");
+	
+	
+}
+
+$conn->close();
 ?>

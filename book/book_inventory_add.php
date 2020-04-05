@@ -1,40 +1,58 @@
-<?php
-	echo <<<_END
-		<html>
+<html>
 			<head>
-				<title>Book Inventory Add</title>
-				<link rel='stylesheet' href='../styles.css'>
+				<title>Book Add</title>
+				<link rel='stylesheet' href='../../../Downloads/updated_library/styles.css'>
 			</head>
-			<body>
 				<a>
 					<br>
 					<center>
-					<img height='100' width='200' src='../images/library_logo.jpg'></img>
+					<img height='100' width='200' src='../../../Downloads/updated_library/images/library_logo.jpg'></img>
+					<br>
 					</center>
-					<br>
-					<br>
 				</a>
-				<form method="post" action ="book_inventory.php">
-					<center>
-					Book ID:
-					<input type='text' name='id'>
-					<br>
-					Book Name:
-					<input type='text' name='name'>
-					<br>
-					Genre:
-					<input type='text' name='type'>
-					<br>
-					Author:
-					<input type='text' name='value'>
-					<br>
-					Publish Year:
-					<input type='text' name='points'>
-					<br>
-					<input type='submit' value='add'>
-					</center>
-				</form>
-			</body>
-		</html>
-	_END;
+			<body>
+				<form method='post' action='book_inventory_add.php'>
+			
+				<center>
+					Title: <input type='text' name='bookName'><br>
+					Author: <input type='text' name='author'><br>
+					Genre: <input type='text' name='genre'><br>
+					Year Published: <input type='text' name='publishYear'><br>
+					Image Link: <input type='text' name='imageLink'><br>
+					<input type='submit' value='Add Book'>
+				</center>
+			
+		</form>
+	</body>
+</html>
+
+<?php
+require_once '../library_db_login.php';
+
+$conn = new mysqli($hn, $un, $pw, $db);
+if($conn->connect_error) die($conn->connect_error);
+
+
+if(isset($_POST['bookName'])) 
+{
+
+	$bookName = $_POST['bookName'];
+	$author = $_POST['author'];
+	$genre = $_POST['genre'];
+	$publishYear = $_POST['publishYear'];
+	$imageLink = $_POST['imageLink'];
+	
+	$query = "INSERT INTO books (bookName, author, genre, publishYear, imageLink) VALUES ('$bookName','$author', '$genre', '$publishYear', '$imageLink')";
+	
+	
+	
+	$result = $conn->query($query); 
+	if(!$result) die($conn->error);
+	
+	header("Location: book_inventory.php");
+	
+	
+}
+
+$conn->close();
 ?>

@@ -1,20 +1,21 @@
 <?php
-	echo <<<_END
-		<html>
-			<head>
-				<title>Book Delete</title>
-				<link rel='stylesheet' href='../styles.css'>
-			</head>
-			<body>
-				<a>
-					<br>
-					<center>
-					<img height='100' width='200' src='../images/library_logo.jpg'></img>
-					</center>
-					<br>
-					<br>
-				</a>
-			</body>
-		</html>
-	_END;
+require_once '../library_db_login.php';
+
+$conn = new mysqli($hn, $un, $pw, $db);
+if($conn->connect_error) die($conn->connect_error);
+
+
+if(isset($_POST['delete'])){
+	
+	$bookid = $_POST['bookid'];
+	$query = "DELETE from books where bookid='$bookid' ";
+	
+	$result = $conn ->query($query);
+	if(!$result) die($conn->error);
+	
+	header("Location: book_inventory.php");
+
+}
+
+$conn->close();
 ?>

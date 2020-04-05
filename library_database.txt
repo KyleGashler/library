@@ -5,6 +5,12 @@ use library;
 
 #create tables
 
+create table USERS (
+    userName varchar(25) NOT NULL,
+    password varchar(100) NOT NULL
+)
+ENGINE InnoDB;
+
 create table BOOKS (
 	bookId int(11) NOT NULL AUTO_INCREMENT,
 	bookName varchar(100) NOT NULL,
@@ -49,6 +55,14 @@ create table MUSIC (
 	PRIMARY KEY (musicId)
 )
 ENGINE InnoDB;
+
+---------------------------------------------------------------------------------------------------------------
+#add data to USERS table
+
+INSERT INTO USERS(userName, password) VALUES("user1","password1);
+INSERT INTO USERS(userName, password) VALUES("kyle","password1);
+INSERT INTO USERS(userName, password) VALUES("austin","password1);
+INSERT INTO USERS(userName, password) VALUES("chance","password1);
 
 ---------------------------------------------------------------------------------------------------------------
 #add data to BOOKS table 

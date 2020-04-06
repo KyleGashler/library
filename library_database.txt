@@ -161,5 +161,3 @@ INSERT INTO MUSIC(musicId, artistName, albumName, genre, releaseYear,imageLink) 
 INSERT INTO MUSIC(musicId, artistName, albumName, genre, releaseYear,imageLink) VALUES(18,'Styx','Greatest Hits','Rock','1985','./music_images/styx_music.jpg'); commit;
 INSERT INTO MUSIC(musicId, artistName, albumName, genre, releaseYear,imageLink) VALUES(19,'Train','Save Me, San Francisco','Pop','2009','./music_images/train_music.jpg'); commit;
 INSERT INTO MUSIC(musicId, artistName, albumName, genre, releaseYear,imageLink) VALUES(20,'Taylor Swift','Lover','Pop','2019','./music_images/tswift_music.jpg'); commit;
-
-

@@ -7,7 +7,7 @@ use library;
 
 create table USERS (
     userName varchar(25) NOT NULL,
-    password varchar(100) NOT NULL
+    userPassWord varchar(100) NOT NULL
 )
 ENGINE InnoDB;
 
@@ -56,108 +56,108 @@ create table MUSIC (
 )
 ENGINE InnoDB;
 
----------------------------------------------------------------------------------------------------------------
+
 #add data to USERS table
 
-INSERT INTO USERS(userName, password) VALUES("user1","password1);
-INSERT INTO USERS(userName, password) VALUES("kyle","password1);
-INSERT INTO USERS(userName, password) VALUES("austin","password1);
-INSERT INTO USERS(userName, password) VALUES("chance","password1);
-
----------------------------------------------------------------------------------------------------------------
-#add data to BOOKS table 
-
-INSERT INTO BOOKS(bookId, bookName, author, genre, publishYear, imageLink) VALUES(1,'Abraham Lincoln: A Life From Beginning to End','Henry Freeman','History','2016','./book_images/abe_lincoln_book.jpg'); commit;
-INSERT INTO BOOKS(bookId, bookName, author, genre, publishYear, imageLink) VALUES(2,'The First American: The Life and Times of Benjamin Franklin','H. W. Brands','History','2002','./book_images/ben_franklin_book.jpg'); commit;
-INSERT INTO BOOKS(bookId, bookName, author, genre, publishYear, imageLink) VALUES(3,'The Ride of a Lifetime','Robert Iger','Business','2013','./book_images/bob_iger_book.jpg'); commit;
-INSERT INTO BOOKS(bookId, bookName, author, genre, publishYear, imageLink) VALUES(4,'The Davinci Code','Dan Brown','Fiction','2005','./book_images/davinci_code_book.jpg'); commit;
-INSERT INTO BOOKS(bookId, bookName, author, genre, publishYear, imageLink) VALUES(5,'PCs for Dummies','Dan Gookin','Educational','2007','./book_images/dummies_book.jpg'); commit;
-INSERT INTO BOOKS(bookId, bookName, author, genre, publishYear, imageLink) VALUES(6,'Goodnight Moon','Margaret Wise Brown','Childrens','2007','./book_images/gnight_moon_book.jpg'); commit;
-INSERT INTO BOOKS(bookId, bookName, author, genre, publishYear, imageLink) VALUES(7,'The Grapes of Wrath','John Steinbeck','Fiction','1939','./book_images/grapes_wrath_book.jpg'); commit;
-INSERT INTO BOOKS(bookId, bookName, author, genre, publishYear, imageLink) VALUES(8,'The Great Gatsby','F. Scott Fitzgerlad','History','1925','./book_images/great_gatsby_book.jpg'); commit;
-INSERT INTO BOOKS(bookId, bookName, author, genre, publishYear, imageLink) VALUES(9,'How the Grinch Stole Christmas!','Dr. Seuss','Childrens','1957','./book_images/grinch_book.jpg'); commit;
-INSERT INTO BOOKS(bookId, bookName, author, genre, publishYear, imageLink) VALUES(10,'The Hobbit, or There and Back Again','J.R.R. Tolkien','Fiction','1937','./book_images/hobbit_book.jpg'); commit;
-INSERT INTO BOOKS(bookId, bookName, author, genre, publishYear, imageLink) VALUES(11,'Hop on Pop','Dr. Seuss','Childrens','1963','./book_images/hop_pop_book.jpg'); commit;
-INSERT INTO BOOKS(bookId, bookName, author, genre, publishYear, imageLink) VALUES(12,'Harry Potter and the Sorcerers Stone','J.K. Rowling','Fiction','1997','./book_images/hp_book.jpg'); commit;
-INSERT INTO BOOKS(bookId, bookName, author, genre, publishYear, imageLink) VALUES(13,'The Adventures of Huckleberry Finn','Mark Twain','Fiction','1876','./book_images/huck_finn_book.jpg'); commit;
-INSERT INTO BOOKS(bookId, bookName, author, genre, publishYear, imageLink) VALUES(14,'The Hunger Games','Suzanne Collins','Fiction','2008','./book_images/hunger_book.jpg'); commit;
-INSERT INTO BOOKS(bookId, bookName, author, genre, publishYear, imageLink) VALUES(15,'Lean in: Women, Work, and the Will to Lead','Sheryl Sandberg, Nell Scovell','Business','2013','./book_images/lean_in_book.jpg'); commit;
-INSERT INTO BOOKS(bookId, bookName, author, genre, publishYear, imageLink) VALUES(16,'Winnie the Pooh','A. A. Milne','Childrens','1926','./book_images/pooh_bear_book.jpg'); commit;
-INSERT INTO BOOKS(bookId, bookName, author, genre, publishYear, imageLink) VALUES(17,'The Silver Linings Playbook','Matthew Quick','Fiction','2008','./book_images/silver_linings_book.jpg'); commit;
-INSERT INTO BOOKS(bookId, bookName, author, genre, publishYear, imageLink) VALUES(18,'Twilight','Stephenie Meyer','Fiction','2005','./book_images/twilight_book.jpg'); commit;
-INSERT INTO BOOKS(bookId, bookName, author, genre, publishYear, imageLink) VALUES(19,'A Tale of Two Cities','Charles Dickens','Fiction','1859','./book_images/two_cities_book.jpg'); commit;
-INSERT INTO BOOKS(bookId, bookName, author, genre, publishYear, imageLink) VALUES(20,'War and Peace','Leo Tolstoy','Fiction','1867','./book_images/war_peace_book.jpg'); commit;
-INSERT INTO BOOKS(bookId, bookName, author, genre, publishYear, imageLink) VALUES(21,'World War Z: An Oral History of the Zombie War','Max Brooks','Fiction','2006','./book_images/wwz_book.jpg'); commit;
+INSERT INTO USERS(userName, userPassWord) VALUES('user1','password1');
+INSERT INTO USERS(userName, userPassWord) VALUES('kyle','password1');
+INSERT INTO USERS(userName, userPassWord) VALUES('austin','password1');
+INSERT INTO USERS(userName, userPassWord) VALUES('chance','password1');
 
 
------------------------------------------------------------------------------------------------------------------
+#add data to BOOKS table
+
+INSERT INTO BOOKS( bookName, author, genre, publishYear, imageLink) VALUES('Abraham Lincoln: A Life From Beginning to End','Henry Freeman','History','2016','./book_images/abe_lincoln_book.jpg'); commit;
+INSERT INTO BOOKS( bookName, author, genre, publishYear, imageLink) VALUES('The First American: The Life and Times of Benjamin Franklin','H. W. Brands','History','2002','./book_images/ben_franklin_book.jpg'); commit;
+INSERT INTO BOOKS( bookName, author, genre, publishYear, imageLink) VALUES('The Ride of a Lifetime','Robert Iger','Business','2013','./book_images/bob_iger_book.jpg'); commit;
+INSERT INTO BOOKS( bookName, author, genre, publishYear, imageLink) VALUES('The Davinci Code','Dan Brown','Fiction','2005','./book_images/davinci_code_book.jpg'); commit;
+INSERT INTO BOOKS( bookName, author, genre, publishYear, imageLink) VALUES('PCs for Dummies','Dan Gookin','Educational','2007','./book_images/dummies_book.jpg'); commit;
+INSERT INTO BOOKS( bookName, author, genre, publishYear, imageLink) VALUES('Goodnight Moon','Margaret Wise Brown','Childrens','2007','./book_images/gnight_moon_book.jpg'); commit;
+INSERT INTO BOOKS( bookName, author, genre, publishYear, imageLink) VALUES('The Grapes of Wrath','John Steinbeck','Fiction','1939','./book_images/grapes_wrath_book.jpg'); commit;
+INSERT INTO BOOKS( bookName, author, genre, publishYear, imageLink) VALUES('The Great Gatsby','F. Scott Fitzgerlad','History','1925','./book_images/great_gatsby_book.jpg'); commit;
+INSERT INTO BOOKS( bookName, author, genre, publishYear, imageLink) VALUES('How the Grinch Stole Christmas!','Dr. Seuss','Childrens','1957','./book_images/grinch_book.jpg'); commit;
+INSERT INTO BOOKS( bookName, author, genre, publishYear, imageLink) VALUES('The Hobbit, or There and Back Again','J.R.R. Tolkien','Fiction','1937','./book_images/hobbit_book.jpg'); commit;
+INSERT INTO BOOKS( bookName, author, genre, publishYear, imageLink) VALUES('Hop on Pop','Dr. Seuss','Childrens','1963','./book_images/hop_pop_book.jpg'); commit;
+INSERT INTO BOOKS( bookName, author, genre, publishYear, imageLink) VALUES('Harry Potter and the Sorcerers Stone','J.K. Rowling','Fiction','1997','./book_images/hp_book.jpg'); commit;
+INSERT INTO BOOKS( bookName, author, genre, publishYear, imageLink) VALUES('The Adventures of Huckleberry Finn','Mark Twain','Fiction','1876','./book_images/huck_finn_book.jpg'); commit;
+INSERT INTO BOOKS( bookName, author, genre, publishYear, imageLink) VALUES('The Hunger Games','Suzanne Collins','Fiction','2008','./book_images/hunger_book.jpg'); commit;
+INSERT INTO BOOKS( bookName, author, genre, publishYear, imageLink) VALUES('Lean in: Women, Work, and the Will to Lead','Sheryl Sandberg, Nell Scovell','Business','2013','./book_images/lean_in_book.jpg'); commit;
+INSERT INTO BOOKS( bookName, author, genre, publishYear, imageLink) VALUES('Winnie the Pooh','A. A. Milne','Childrens','1926','./book_images/pooh_bear_book.jpg'); commit;
+INSERT INTO BOOKS( bookName, author, genre, publishYear, imageLink) VALUES('The Silver Linings Playbook','Matthew Quick','Fiction','2008','./book_images/silver_linings_book.jpg'); commit;
+INSERT INTO BOOKS( bookName, author, genre, publishYear, imageLink) VALUES('Twilight','Stephenie Meyer','Fiction','2005','./book_images/twilight_book.jpg'); commit;
+INSERT INTO BOOKS( bookName, author, genre, publishYear, imageLink) VALUES('A Tale of Two Cities','Charles Dickens','Fiction','1859','./book_images/two_cities_book.jpg'); commit;
+INSERT INTO BOOKS( bookName, author, genre, publishYear, imageLink) VALUES('War and Peace','Leo Tolstoy','Fiction','1867','./book_images/war_peace_book.jpg'); commit;
+INSERT INTO BOOKS( bookName, author, genre, publishYear, imageLink) VALUES('World War Z: An Oral History of the Zombie War','Max Brooks','Fiction','2006','./book_images/wwz_book.jpg'); commit;
+
+
+
 #add data to MAGAZINES table
-INSERT INTO MAGAZINES(magazineId, magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES(1,'Better Homes and Gardens','Lifestyle','Meredith Corporation','2015',358,'./magazine_images/better_hg_mag.jpg'); commit;
-INSERT INTO MAGAZINES(magazineId, magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES(2,'Birds and Blooms','Gardening','Trusted Media Brands','218',428,'./magazine_images/birds_blooms_mag.jpg'); commit;
-INSERT INTO MAGAZINES(magazineId, magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES(3,'Bon Appetit','Cooking','Conde Nast','2019',567,'./magazine_images/bon_appetit_mag.jpg'); commit;
-INSERT INTO MAGAZINES(magazineId, magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES(4,'Cosmopolitan','Entertainment','Hearst Corporation','2020',689,'./magazine_images/cosmo_mag.jpg'); commit;
-INSERT INTO MAGAZINES(magazineId, magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES(5,'Food and Wine','Cooking','Meredith Corporation','2015',213,'./magazine_images/food_wine_mag.jpg'); commit;
-INSERT INTO MAGAZINES(magazineId, magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES(6,'Game Informer','Gaming','GameStop Corp','2019',1485,'./magazine_images/game_informer_mag.jpg'); commit;
-INSERT INTO MAGAZINES(magazineId, magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES(7,'Golf Digest','Sports','Discovery inc','2018',567,'./magazine_images/golf_digest_mag.jpg'); commit;
-INSERT INTO MAGAZINES(magazineId, magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES(8,'GQ','Entertainment','Conde Nast','2020',2587,'./magazine_images/gq_mag.jpg'); commit;
-INSERT INTO MAGAZINES(magazineId, magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES(9,'Martha Stewart Living','Lifestyle','Meredith Corporation','2017',682,'./magazine_images/living_mag.jpg'); commit;
-INSERT INTO MAGAZINES(magazineId, magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES(10,'Mens Health','Health','Hearst Corporation','2012',245,'./magazine_images/mens_health_mag.jpg'); commit;
-INSERT INTO MAGAZINES(magazineId, magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES(11,'Motor Trend','Auto','Motor Trend Group','2010',946,'./magazine_images/motortrend_mag.jpg'); commit;
-INSERT INTO MAGAZINES(magazineId, magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES(12,'National Geographic','Nature','The National Geographic Society','2020',1248,'./magazine_images/nat_geo_mag.jpg'); commit;
-INSERT INTO MAGAZINES(magazineId, magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES(13,'People','Lifestyle','Meredith Corporation','2019',1589,'./magazine_images/people_mag.jpg'); commit;
-INSERT INTO MAGAZINES(magazineId, magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES(14,'Popular Mechanics','Auto','Hearst Corporation','2012',593,'./magazine_images/pop_mechanics_mag.jpg'); commit;
-INSERT INTO MAGAZINES(magazineId, magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES(15,'Popular Science','Science','Bonnier Corporation','2020',1472,'./magazine_images/pop_science_mag.jpg'); commit;
-INSERT INTO MAGAZINES(magazineId, magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES(16,'Readers Digest','Lifestyle','Trusted Media Brands','2015',2791,'./magazine_images/readers_digest_mag.jpg'); commit;
-INSERT INTO MAGAZINES(magazineId, magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES(17,'Rolling Stone','Entertainment','Penske Media Corporation','2018',4961,'./magazine_images/rolling_stone_mag.jpg'); commit;
-INSERT INTO MAGAZINES(magazineId, magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES(18,'Sports Illustrated','Sports','Authentic Brands Group','2019',8249,'./magazine_images/si_mag.jpg'); commit;
-INSERT INTO MAGAZINES(magazineId, magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES(19,'Southern Living','Lifestyle','Southern Progress Corporation','2016',943,'./magazine_images/south_livin_mag.jpg'); commit;
-INSERT INTO MAGAZINES(magazineId, magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES(20,'Time','News','Meredith Corporation','2019',1567,'./magazine_images/time_mag.jpg'); commit;
-INSERT INTO MAGAZINES(magazineId, magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES(21,'Womens Health','Health','Hearst Corporation','2019',3496,'./magazine_images/womens_health_mag.jpg'); commit;
+INSERT INTO MAGAZINES( magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES('Better Homes and Gardens','Lifestyle','Meredith Corporation','2015',358,'./magazine_images/better_hg_mag.jpg'); commit;
+INSERT INTO MAGAZINES( magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES('Birds and Blooms','Gardening','Trusted Media Brands','218',428,'./magazine_images/birds_blooms_mag.jpg'); commit;
+INSERT INTO MAGAZINES( magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES('Bon Appetit','Cooking','Conde Nast','2019',567,'./magazine_images/bon_appetit_mag.jpg'); commit;
+INSERT INTO MAGAZINES( magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES('Cosmopolitan','Entertainment','Hearst Corporation','2020',689,'./magazine_images/cosmo_mag.jpg'); commit;
+INSERT INTO MAGAZINES( magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES('Food and Wine','Cooking','Meredith Corporation','2015',213,'./magazine_images/food_wine_mag.jpg'); commit;
+INSERT INTO MAGAZINES( magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES('Game Informer','Gaming','GameStop Corp','2019',1485,'./magazine_images/game_informer_mag.jpg'); commit;
+INSERT INTO MAGAZINES( magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES('Golf Digest','Sports','Discovery inc','2018',567,'./magazine_images/golf_digest_mag.jpg'); commit;
+INSERT INTO MAGAZINES( magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES('GQ','Entertainment','Conde Nast','2020',2587,'./magazine_images/gq_mag.jpg'); commit;
+INSERT INTO MAGAZINES( magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES('Martha Stewart Living','Lifestyle','Meredith Corporation','2017',682,'./magazine_images/living_mag.jpg'); commit;
+INSERT INTO MAGAZINES( magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES('Mens Health','Health','Hearst Corporation','2012',245,'./magazine_images/mens_health_mag.jpg'); commit;
+INSERT INTO MAGAZINES( magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES('Motor Trend','Auto','Motor Trend Group','2010',946,'./magazine_images/motortrend_mag.jpg'); commit;
+INSERT INTO MAGAZINES( magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES('National Geographic','Nature','The National Geographic Society','2020',1248,'./magazine_images/nat_geo_mag.jpg'); commit;
+INSERT INTO MAGAZINES( magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES('People','Lifestyle','Meredith Corporation','2019',1589,'./magazine_images/people_mag.jpg'); commit;
+INSERT INTO MAGAZINES( magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES('Popular Mechanics','Auto','Hearst Corporation','2012',593,'./magazine_images/pop_mechanics_mag.jpg'); commit;
+INSERT INTO MAGAZINES( magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES('Popular Science','Science','Bonnier Corporation','2020',1472,'./magazine_images/pop_science_mag.jpg'); commit;
+INSERT INTO MAGAZINES( magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES('Readers Digest','Lifestyle','Trusted Media Brands','2015',2791,'./magazine_images/readers_digest_mag.jpg'); commit;
+INSERT INTO MAGAZINES( magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES('Rolling Stone','Entertainment','Penske Media Corporation','2018',4961,'./magazine_images/rolling_stone_mag.jpg'); commit;
+INSERT INTO MAGAZINES( magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES('Sports Illustrated','Sports','Authentic Brands Group','2019',8249,'./magazine_images/si_mag.jpg'); commit;
+INSERT INTO MAGAZINES( magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES('Southern Living','Lifestyle','Southern Progress Corporation','2016',943,'./magazine_images/south_livin_mag.jpg'); commit;
+INSERT INTO MAGAZINES( magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES('Time','News','Meredith Corporation','2019',1567,'./magazine_images/time_mag.jpg'); commit;
+INSERT INTO MAGAZINES( magazineName, topic, publisher, publishYear,issueNumber,imageLink) VALUES('Womens Health','Health','Hearst Corporation','2019',3496,'./magazine_images/womens_health_mag.jpg'); commit;
 
------------------------------------------------------------------------------------------------------------------
+
 #add data to MOVIES table
-INSERT INTO MOVIES(movieId, movieName, genre, director, releaseYear,imageLink) VALUES(1,'Ant Man','Action','Peyton Reed','2015','./movie_images/ant_man_movie.jpg'); commit;
-INSERT INTO MOVIES(movieId, movieName, genre, director, releaseYear,imageLink) VALUES(2,'Avengers: Endgame','Action','Anthony Russo','2019','./movie_images/avengers_end_movie.jpg'); commit;
-INSERT INTO MOVIES(movieId, movieName, genre, director, releaseYear,imageLink) VALUES(3,'The Dark Knight','Action','Christopher Nolan','2008','./movie_images/dark_knight_movie.jpg'); commit;
-INSERT INTO MOVIES(movieId, movieName, genre, director, releaseYear,imageLink) VALUES(4,'Frozen','Animated','Chris Buck','2013','./movie_images/frozen_movie.jpg'); commit;
-INSERT INTO MOVIES(movieId, movieName, genre, director, releaseYear,imageLink) VALUES(5,'Groundhog Day','Comedy','Harold Ramis','1993','./movie_images/groundhog_day_movie.jpg'); commit;
-INSERT INTO MOVIES(movieId, movieName, genre, director, releaseYear,imageLink) VALUES(6,'Hitch','Comedy','Andy Tennant','2005','./movie_images/hitch_movie.jpg'); commit;
-INSERT INTO MOVIES(movieId, movieName, genre, director, releaseYear,imageLink) VALUES(7,'How to Train Your Dragon','Animated','Chris Sanders','2010','./movie_images/how_to_dragon_movie.jpg'); commit;
-INSERT INTO MOVIES(movieId, movieName, genre, director, releaseYear,imageLink) VALUES(8,'The Incredibles','Animated','Brad Bird','2004','./movie_images/incredibles_movie.jpg'); commit;
-INSERT INTO MOVIES(movieId, movieName, genre, director, releaseYear,imageLink) VALUES(9,'Jojo Rabbit','Comedy','Taika Waititi','2019','./movie_images/jojo_rabbit_movie.jpg'); commit;
-INSERT INTO MOVIES(movieId, movieName, genre, director, releaseYear,imageLink) VALUES(10,'Jurassic Park','Action','Steven Spielberg','1993','./movie_images/jurassic_park_movie.jpg'); commit;
-INSERT INTO MOVIES(movieId, movieName, genre, director, releaseYear,imageLink) VALUES(11,'The Lego Movie','Animated','Phil Lord','2014','./movie_images/lego_movie.jpg'); commit;
-INSERT INTO MOVIES(movieId, movieName, genre, director, releaseYear,imageLink) VALUES(12,'Little Women','Drama','Greta Gerwig','2019','./movie_images/little_women_movie.jpg'); commit;
-INSERT INTO MOVIES(movieId, movieName, genre, director, releaseYear,imageLink) VALUES(13,'Once Upon a Time in Hollywood','Drama','Quentin Tarantino','2019','./movie_images/once_upon_time_movie.jpg'); commit;
-INSERT INTO MOVIES(movieId, movieName, genre, director, releaseYear,imageLink) VALUES(14,'A Quiet Place','Horror','John Krasinski','2018','./movie_images/quiet_place_movie.jpg'); commit;
-INSERT INTO MOVIES(movieId, movieName, genre, director, releaseYear,imageLink) VALUES(15,'Star Wars: The Rise of Skywalker','Science Fiction','J.J. Abrams','2019','./movie_images/star_wars_movie.jpg'); commit;
-INSERT INTO MOVIES(movieId, movieName, genre, director, releaseYear,imageLink) VALUES(16,'The Notebook','Romance','Nick Cassavetes','2004','./movie_images/the_notebook_movie.jpg'); commit;
-INSERT INTO MOVIES(movieId, movieName, genre, director, releaseYear,imageLink) VALUES(17,'The Shining','Horror','Stanley Kubrick','1980','./movie_images/the_shining_movie.jpg'); commit;
-INSERT INTO MOVIES(movieId, movieName, genre, director, releaseYear,imageLink) VALUES(18,'Thor: Ragnarok','Action','Taika Waititi','2017','./movie_images/thor_ragnarok_movie.jpg'); commit;
-INSERT INTO MOVIES(movieId, movieName, genre, director, releaseYear,imageLink) VALUES(19,'Tommy Boy','Comedy','Peter Segal','1995','./movie_images/tommy_boy_movie.jpg'); commit;
-INSERT INTO MOVIES(movieId, movieName, genre, director, releaseYear,imageLink) VALUES(20,'Toy Story','Animated','John Lasseter','1995','./movie_images/toy_story_movie.jpg'); commit;
-INSERT INTO MOVIES(movieId, movieName, genre, director, releaseYear,imageLink) VALUES(21,'Wonder Woman','Action','Patty Jenkins','2017','./movie_images/wonder_woman_movie.jpg'); commit;
+INSERT INTO MOVIES( movieName, genre, director, releaseYear,imageLink) VALUES('Ant Man','Action','Peyton Reed','2015','./movie_images/ant_man_movie.jpg'); commit;
+INSERT INTO MOVIES( movieName, genre, director, releaseYear,imageLink) VALUES('Avengers: Endgame','Action','Anthony Russo','2019','./movie_images/avengers_end_movie.jpg'); commit;
+INSERT INTO MOVIES( movieName, genre, director, releaseYear,imageLink) VALUES('The Dark Knight','Action','Christopher Nolan','2008','./movie_images/dark_knight_movie.jpg'); commit;
+INSERT INTO MOVIES( movieName, genre, director, releaseYear,imageLink) VALUES('Frozen','Animated','Chris Buck','2013','./movie_images/frozen_movie.jpg'); commit;
+INSERT INTO MOVIES( movieName, genre, director, releaseYear,imageLink) VALUES('Groundhog Day','Comedy','Harold Ramis','1993','./movie_images/groundhog_day_movie.jpg'); commit;
+INSERT INTO MOVIES( movieName, genre, director, releaseYear,imageLink) VALUES('Hitch','Comedy','Andy Tennant','2005','./movie_images/hitch_movie.jpg'); commit;
+INSERT INTO MOVIES( movieName, genre, director, releaseYear,imageLink) VALUES('How to Train Your Dragon','Animated','Chris Sanders','2010','./movie_images/how_to_dragon_movie.jpg'); commit;
+INSERT INTO MOVIES( movieName, genre, director, releaseYear,imageLink) VALUES('The Incredibles','Animated','Brad Bird','2004','./movie_images/incredibles_movie.jpg'); commit;
+INSERT INTO MOVIES( movieName, genre, director, releaseYear,imageLink) VALUES('Jojo Rabbit','Comedy','Taika Waititi','2019','./movie_images/jojo_rabbit_movie.jpg'); commit;
+INSERT INTO MOVIES( movieName, genre, director, releaseYear,imageLink) VALUES('Jurassic Park','Action','Steven Spielberg','1993','./movie_images/jurassic_park_movie.jpg'); commit;
+INSERT INTO MOVIES( movieName, genre, director, releaseYear,imageLink) VALUES('The Lego Movie','Animated','Phil Lord','2014','./movie_images/lego_movie.jpg'); commit;
+INSERT INTO MOVIES( movieName, genre, director, releaseYear,imageLink) VALUES('Little Women','Drama','Greta Gerwig','2019','./movie_images/little_women_movie.jpg'); commit;
+INSERT INTO MOVIES( movieName, genre, director, releaseYear,imageLink) VALUES('Once Upon a Time in Hollywood','Drama','Quentin Tarantino','2019','./movie_images/once_upon_time_movie.jpg'); commit;
+INSERT INTO MOVIES( movieName, genre, director, releaseYear,imageLink) VALUES('A Quiet Place','Horror','John Krasinski','2018','./movie_images/quiet_place_movie.jpg'); commit;
+INSERT INTO MOVIES( movieName, genre, director, releaseYear,imageLink) VALUES('Star Wars: The Rise of Skywalker','Science Fiction','J.J. Abrams','2019','./movie_images/star_wars_movie.jpg'); commit;
+INSERT INTO MOVIES( movieName, genre, director, releaseYear,imageLink) VALUES('The Notebook','Romance','Nick Cassavetes','2004','./movie_images/the_notebook_movie.jpg'); commit;
+INSERT INTO MOVIES( movieName, genre, director, releaseYear,imageLink) VALUES('The Shining','Horror','Stanley Kubrick','1980','./movie_images/the_shining_movie.jpg'); commit;
+INSERT INTO MOVIES( movieName, genre, director, releaseYear,imageLink) VALUES('Thor: Ragnarok','Action','Taika Waititi','2017','./movie_images/thor_ragnarok_movie.jpg'); commit;
+INSERT INTO MOVIES( movieName, genre, director, releaseYear,imageLink) VALUES('Tommy Boy','Comedy','Peter Segal','1995','./movie_images/tommy_boy_movie.jpg'); commit;
+INSERT INTO MOVIES( movieName, genre, director, releaseYear,imageLink) VALUES('Toy Story','Animated','John Lasseter','1995','./movie_images/toy_story_movie.jpg'); commit;
+INSERT INTO MOVIES( movieName, genre, director, releaseYear,imageLink) VALUES('Wonder Woman','Action','Patty Jenkins','2017','./movie_images/wonder_woman_movie.jpg'); commit;
 
------------------------------------------------------------------------------------------------------------------
+
 #add data to MUSIC table
 
-INSERT INTO MUSIC(musicId, artistName, albumName, genre, releaseYear,imageLink) VALUES(1,'.38 Special','Special Forces','Rock','1982','./music_images/38_special_music.jpg'); commit;
-INSERT INTO MUSIC(musicId, artistName, albumName, genre, releaseYear,imageLink) VALUES(2,'Adele','21','Pop','2011','./music_images/adele_music.jpg'); commit;
-INSERT INTO MUSIC(musicId, artistName, albumName, genre, releaseYear,imageLink) VALUES(3,'America','America','Rock','1971','./music_images/america_music.jpg'); commit;
-INSERT INTO MUSIC(musicId, artistName, albumName, genre, releaseYear,imageLink) VALUES(4,'The Beatles','Abbey Road','Rock','1969','./music_images/beatles_music.jpg'); commit;
-INSERT INTO MUSIC(musicId, artistName, albumName, genre, releaseYear,imageLink) VALUES(5,'Bleachers','Strange Desires','Indie Pop','2014','./music_images/bleachers_music.jpg'); commit;
-INSERT INTO MUSIC(musicId, artistName, albumName, genre, releaseYear,imageLink) VALUES(6,'The Backstreet Boys','Millenium','Pop','1999','./music_images/bstreet_music.jpg'); commit;
-INSERT INTO MUSIC(musicId, artistName, albumName, genre, releaseYear,imageLink) VALUES(7,'Cher','Heart of Stone','Pop','1989','./music_images/cher_music.jpg'); commit;
-INSERT INTO MUSIC(musicId, artistName, albumName, genre, releaseYear,imageLink) VALUES(8,'Carrie Underwood','Carnival Ride','Country','2007','./music_images/cunderwood_music.jpg'); commit;
-INSERT INTO MUSIC(musicId, artistName, albumName, genre, releaseYear,imageLink) VALUES(9,'Eminem','The Eminem Show','Hip Hop','2002','./music_images/eminem_music.jpg'); commit;
-INSERT INTO MUSIC(musicId, artistName, albumName, genre, releaseYear,imageLink) VALUES(10,'Huey Lewis and The News','Sports','Rock','1983','./music_images/hlewis_news_music.jpg'); commit;
-INSERT INTO MUSIC(musicId, artistName, albumName, genre, releaseYear,imageLink) VALUES(11,'Journey','Infinity','Rock','1978','./music_images/journey_music.jpg'); commit;
-INSERT INTO MUSIC(musicId, artistName, albumName, genre, releaseYear,imageLink) VALUES(12,'James Taylor','Greatest Hits','Rock','1976','./music_images/jtaylor_music.jpg'); commit;
-INSERT INTO MUSIC(musicId, artistName, albumName, genre, releaseYear,imageLink) VALUES(13,'Keith Urban','Ripcord','Country','2015','./music_images/keith_urban_music.jpg'); commit;
-INSERT INTO MUSIC(musicId, artistName, albumName, genre, releaseYear,imageLink) VALUES(14,'Kesha','Animal','Pop','2010','./music_images/kesha_music.jpg'); commit;
-INSERT INTO MUSIC(musicId, artistName, albumName, genre, releaseYear,imageLink) VALUES(15,'The Lumineers','Cleopatra','Folk Rock','2016','./music_images/lumineers_music.jpg'); commit;
-INSERT INTO MUSIC(musicId, artistName, albumName, genre, releaseYear,imageLink) VALUES(16,'Mat Kearney','Just Kids','Soft Rock','2015','./music_images/mat_kearney_music.jpg'); commit;
-INSERT INTO MUSIC(musicId, artistName, albumName, genre, releaseYear,imageLink) VALUES(17,'Queen','News of the World','Rock','1977','./music_images/queen_music.jpg'); commit;
-INSERT INTO MUSIC(musicId, artistName, albumName, genre, releaseYear,imageLink) VALUES(18,'Styx','Greatest Hits','Rock','1985','./music_images/styx_music.jpg'); commit;
-INSERT INTO MUSIC(musicId, artistName, albumName, genre, releaseYear,imageLink) VALUES(19,'Train','Save Me, San Francisco','Pop','2009','./music_images/train_music.jpg'); commit;
-INSERT INTO MUSIC(musicId, artistName, albumName, genre, releaseYear,imageLink) VALUES(20,'Taylor Swift','Lover','Pop','2019','./music_images/tswift_music.jpg'); commit;
+INSERT INTO MUSIC( artistName, albumName, genre, releaseYear,imageLink) VALUES('.38 Special','Special Forces','Rock','1982','./music_images/38_special_music.jpg'); commit;
+INSERT INTO MUSIC( artistName, albumName, genre, releaseYear,imageLink) VALUES('Adele','21','Pop','2011','./music_images/adele_music.jpg'); commit;
+INSERT INTO MUSIC( artistName, albumName, genre, releaseYear,imageLink) VALUES('America','America','Rock','1971','./music_images/america_music.jpg'); commit;
+INSERT INTO MUSIC( artistName, albumName, genre, releaseYear,imageLink) VALUES('The Beatles','Abbey Road','Rock','1969','./music_images/beatles_music.jpg'); commit;
+INSERT INTO MUSIC( artistName, albumName, genre, releaseYear,imageLink) VALUES('Bleachers','Strange Desires','Indie Pop','2014','./music_images/bleachers_music.jpg'); commit;
+INSERT INTO MUSIC( artistName, albumName, genre, releaseYear,imageLink) VALUES('The Backstreet Boys','Millenium','Pop','1999','./music_images/bstreet_music.jpg'); commit;
+INSERT INTO MUSIC( artistName, albumName, genre, releaseYear,imageLink) VALUES('Cher','Heart of Stone','Pop','1989','./music_images/cher_music.jpg'); commit;
+INSERT INTO MUSIC( artistName, albumName, genre, releaseYear,imageLink) VALUES('Carrie Underwood','Carnival Ride','Country','2007','./music_images/cunderwood_music.jpg'); commit;
+INSERT INTO MUSIC( artistName, albumName, genre, releaseYear,imageLink) VALUES('Eminem','The Eminem Show','Hip Hop','2002','./music_images/eminem_music.jpg'); commit;
+INSERT INTO MUSIC( artistName, albumName, genre, releaseYear,imageLink) VALUES('Huey Lewis and The News','Sports','Rock','1983','./music_images/hlewis_news_music.jpg'); commit;
+INSERT INTO MUSIC( artistName, albumName, genre, releaseYear,imageLink) VALUES('Journey','Infinity','Rock','1978','./music_images/journey_music.jpg'); commit;
+INSERT INTO MUSIC( artistName, albumName, genre, releaseYear,imageLink) VALUES('James Taylor','Greatest Hits','Rock','1976','./music_images/jtaylor_music.jpg'); commit;
+INSERT INTO MUSIC( artistName, albumName, genre, releaseYear,imageLink) VALUES('Keith Urban','Ripcord','Country','2015','./music_images/keith_urban_music.jpg'); commit;
+INSERT INTO MUSIC( artistName, albumName, genre, releaseYear,imageLink) VALUES('Kesha','Animal','Pop','2010','./music_images/kesha_music.jpg'); commit;
+INSERT INTO MUSIC( artistName, albumName, genre, releaseYear,imageLink) VALUES('The Lumineers','Cleopatra','Folk Rock','2016','./music_images/lumineers_music.jpg'); commit;
+INSERT INTO MUSIC( artistName, albumName, genre, releaseYear,imageLink) VALUES('Mat Kearney','Just Kids','Soft Rock','2015','./music_images/mat_kearney_music.jpg'); commit;
+INSERT INTO MUSIC( artistName, albumName, genre, releaseYear,imageLink) VALUES('Queen','News of the World','Rock','1977','./music_images/queen_music.jpg'); commit;
+INSERT INTO MUSIC( artistName, albumName, genre, releaseYear,imageLink) VALUES('Styx','Greatest Hits','Rock','1985','./music_images/styx_music.jpg'); commit;
+INSERT INTO MUSIC( artistName, albumName, genre, releaseYear,imageLink) VALUES('Train','Save Me, San Francisco','Pop','2009','./music_images/train_music.jpg'); commit;
+INSERT INTO MUSIC( artistName, albumName, genre, releaseYear,imageLink) VALUES('Taylor Swift','Lover','Pop','2019','./music_images/tswift_music.jpg'); commit;

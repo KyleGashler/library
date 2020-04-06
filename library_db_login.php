@@ -3,6 +3,6 @@
 	$hn = 'localhost';
 	$db = 'library';
 	$un = 'root';
-	$pw = '';
+	$pw = 'root';
 
 ?>

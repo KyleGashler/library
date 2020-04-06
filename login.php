@@ -17,11 +17,11 @@ echo <<<_END
 			<form method="post" action ="./user/validate-user.php">
 				<center>
 				Username
-				<input type ="text" name="name">
+				<input type ="text" name="username">
 				<br>
 				<br>
 				Password
-				<input type ="password" name="pass">
+				<input type ="password" name="password">
 				<br>
 				<br>
 				<input type="submit" value="Login">

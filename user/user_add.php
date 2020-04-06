@@ -10,12 +10,12 @@ if(isset($_POST['username']))
     $userName = $_POST['username'];
     $password = $_POST['password'];
 
-    $query = "INSERT INTO USERS (userName, password) VALUES ('$userName','$password')";
+    $query = "INSERT INTO USERS (userName, userPassWord) VALUES ('$userName','$password')";
 
     $result = $conn->query($query);
     if(!$result) die($conn->error);
 
-    header("Location: book_inventory.php");
+    header("Location: ../book/book_inventory.php");
 
 }
 

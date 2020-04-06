@@ -6,7 +6,7 @@
 <a>
     <br>
     <center>
-        <img height='100' width='200' src='..//images/library_logo.jpg'></img>
+        <img height='100' width='200' src='../images/library_logo.jpg'></img>
         <br>
     </center>
 </a>
@@ -14,8 +14,8 @@
 <form method='post' action='./user/user_add.php'>
 
     <center>
-        Title: <input type='text' name='username'><br>
-        Author: <input type='text' name='password'><br>
+        Username: <input type='text' name='username'><br>
+        Password: <input type='text' name='password'><br>
         <input type='submit' value='Register'>
     </center>
 

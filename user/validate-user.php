@@ -30,7 +30,7 @@ if(isset($_POST['username'])){
         session_start();//this must be called anywhere you want to use a session
         $_SESSION['username'] = $userName;
 
-        header('Location: ../home.php');
+        header('Location: ../index.php');
     }
     else{
         echo 'no match';

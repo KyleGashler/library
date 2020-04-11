@@ -11,11 +11,21 @@
 					<br>
 					</center>
 				</a>
+                <br>
+                <br>
+                <a href="../logout.php">Logout</a>
 			</body>
 </html>
 
 <?php
 	require_once '../library_db_login.php';
+
+session_start();
+if (isset($_SESSION['username'])) {
+    echo 'welcome ' . $_SESSION['username'];
+} else {
+    header("Location: ../login.php");
+}
 
 $conn = new mysqli($hn, $un, $pw, $db);
 if($conn->connect_error) die($conn->connect_error);
@@ -37,20 +47,19 @@ if(isset($_POST['update'])){
 	
 echo <<<_END
 	<center>
-	<pre>
-	<form method='post' action='movie_update.php'>
-		Title: <input type='text' name='movieName' value='$row[1]'>
-		Genre: <input type='text' name='genre' value='$row[2]'>
-		Director: <input type='text' name='director' value='$row[3]'>
-		Year Released: <input type='text' name='releaseYear' value='$row[4]'>
-		Image Link: <input type='text' name='imageLink' value='$row[5]'>
-		<input type='hidden' name='movieid' value='$row[0]'>
-		<input type='hidden' name='update2' value='yes'>
-		<input type='submit'>
-	</form>	
-	</pre>
+        <pre>
+            <form method='post' action='movie_update.php'>
+                Title: <input type='text' name='movieName' value='$row[1]'>
+                Genre: <input type='text' name='genre' value='$row[2]'>
+                Director: <input type='text' name='director' value='$row[3]'>
+                Year Released: <input type='text' name='releaseYear' value='$row[4]'>
+                Image Link: <input type='text' name='imageLink' value='$row[5]'>
+                <input type='hidden' name='movieid' value='$row[0]'>
+                <input type='hidden' name='update2' value='yes'>
+                <input type='submit'>
+            </form>	
+        </pre>
 	</center>
-	
 _END;
 	
 	}

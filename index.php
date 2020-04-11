@@ -1,9 +1,11 @@
 <?php
 session_start();
-if(!isset($_SESSION['username']));
+if(isset($_SESSION['username']))
 {
-    header("Location: login.php?sessionFailed");
-};
+    echo 'welcome ' . $_SESSION['username'];
+} else{
+    header("Location: ./login.php");
+}
 echo <<<_END
 	<html>
 		<head>
@@ -30,7 +32,7 @@ echo <<<_END
 						Book List 
 						<br>
 						<br>
-						<a href="./movie/movie_inventory.php">
+						<a href="./movies/movie_inventory.php">
 							<img height='150' width='150' src='./images/movie_inventory.jpg'></img>
 						</a>
 						<br>
@@ -55,6 +57,9 @@ echo <<<_END
 				</div>
 				<br>
 			</div>
+			<br>
+			<br>
+			<a href="./logout.php">Logout</a>
 		</body>
 	</html>
 _END;
